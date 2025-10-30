@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveXchange</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <div class="navbar">
+        <div class="main-logo">
+            <img src="Images/DriveXchange.png" alt="DriveXchange-logo" width="217" height="87">
+        </div>
+        <div class="search-container">
+            <div class="all">
+                <select>
+                    <option value="">All</option>
+                </select>
+            </div>
+            <div class="i1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Serch or Ask a question" class="q2">
+            </div>
+        </div>
+        <ul>
+            <li>
+                <span class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+            </li>   
+            <li>
+                <span>
+                    <i class="fa-regular fa-circle-user"></i>
+                    <button onclick="showLoginForm()" id="bttn">Login/Register</button>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="sub-nav-bar">
+        <div class="speck">
+          <select name="select" size="1">
+            <option>NEW CAR</option>
+          </select>
+          <select>
+                <option>USED CAR</option>
+          </select>
+        </div>
+        <div class="city">
+            <i class="fa-solid fa-location-dot"></i>
+            <select name="" id="">
+                <option value="">Select City</option>
+                <option value="">Delhi</option>
+                <option value="">Mumbai</option>
+                <option value="">Bangalore</option>
+                <option value="">Kolkata</option>
+                <option value="">Chennai</option>
+                <option value="">Hyderabad</option>
+                <option value="">Pune</option>
+                <option value="">Ahmedabad</option>
+                <option value="">Jaipur</option>
+                <option value="">Nagpur</option>
+                <option value="">Surat</option>
+                <option value="">Vadodara</option>
+                <option value="">Bhopal</option>
+                <option value="">Gandhinagar</option>
+                <option value="">Ranchi</option>
+            </select>
+        </div>
+    </div>
+    <div id="loginForm">
+        <form action="login.php" method="post">
+            <h2>Login</h2>
+            Username:<input type="text" id="username" placeholder="Username" name="username">
+            Password:<input type="password" id="password" placeholder="Password" name="password">
+            <button>Login</button>
+        </form>
+        <button onclick="closeLoginForm()">Close</button>
+        <form action="signup.html" method="post">
+            <button>New User</button>
+        </form>
+    </div>
+    <div class="sslider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="Images/1.png" alt=""></div>
+              <div class="swiper-slide"><img src="Images/2.png" alt="" height="857"></div>
+              <div class="swiper-slide"><img src="Images/3.png" alt=""></div>
+              <div class="swiper-slide"><img src="Images/4.png" alt=""></div>
+              <div class="swiper-slide"><img src="Images/5.png" alt=""></div>
+              <div class="swiper-slide"><img src="Images/7.png" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+      </div>
+    </div>
+    <div class="most-sell">
+        <div class="head">
+            <h2 style="padding: 10px;">Most Sell</h2>
+            <ul>
+                <li>
+                    <span class="ms">SUV</span>
+                </li>
+                <li>
+                    <span class="ms">Sedan</span>
+                </li>
+                <li>
+                    <span class="ms">Hatchback</span>
+                </li>
+                <li>
+                    <span class="ms">MUV</span>
+                </li>
+                <li>
+                    <span class="ms">Luxury</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content-head scrollable-div">
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/MostSearchCarsImg/XUV700.avif" alt="XUV700" width="247" height="145">
+                </div>
+                <br>
+                <h4>Mahindra XUV700</h4>
+                <p>Rs 13.99 - 25.74 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>       
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/MostSearchCarsImg/ScorpioN.avif" alt="ScorpioN" width="247" height="145">
+                </div>
+                <br>
+                <h4>Mahindra ScorpioN</h4>
+                <p>Rs 13.99 - 24.89 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/MostSearchCarsImg/Thar.webp" alt="Thar" width="247" height="145">
+                </div>
+                <br>
+                <h4>Mahindra Thar</h4>
+                <p>Rs 11.50 - 17.60 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/MostSearchCarsImg/Nexon.avif" alt="Nexon" width="247" height="145">
+                </div>
+                <br>
+                <h4>Tata Nexon</h4>
+                <p>Rs 8 - 15.60 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/MostSearchCarsImg/Creta.avif" alt="Creta" width="247" height="145">
+                </div>
+                <br>
+                <h4>Hyundai Creta</h4>
+                <p>Rs 11.11 - 20.50 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/MostSearchCarsImg/Punch.avif" alt="Punch" width="247" height="145">
+                </div>
+                <br>
+                <h4>Tata Punch</h4>
+                <p>Rs 6 - 10.32 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/MostSearchCarsImg/Fortuner.avif" alt="Fortuner" width="247" height="145">
+                </div>
+                <br>
+                <h4>Toyota Fortuner</h4>
+                <p>Rs 33.78 - 51.94 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/MostSearchCarsImg/Fonx.avif" alt="Fronx" width="247" height="145">
+                </div>
+                <br>
+                <h4>Maruti FRONX</h4>
+                <p>Rs 7.52 - 13.04 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/MostSearchCarsImg/Thar ROXX.avif" alt="thar ROXX" width="247" height="145">
+                </div>
+                <br>
+                <h4>Mahindra Thar ROXX</h4>
+                <p>Rs 12.99 - 23.09 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/MostSearchCarsImg/Brezza.avif" alt="Brezza" width="247" height="145">
+                </div>
+                <br>
+                <h4>Maruti Brezza</h4>
+                <p>Rs 8.69 - 14.14 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+        </div>
+        <h2 style="cursor: pointer; color: crimson; font-weight: bolder;">View More SUV Cars ></h2>
+        
+    </div>
+    <div class="most-sell">
+        <div class="head">
+            <h2 style="padding: 10px;">Electric Cars</h2>
+        </div>
+        <div class="content-head scrollable-div">
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/eVs/BE 6.avif" alt="BE 6" width="247" height="145">
+                </div>
+                <br>
+                <h4>Mahindra BE 6</h4>
+                <p>Rs 18.90 - 26.90 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>       
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/eVs/Windsor.avif" alt="Windsor" width="247" height="145">
+                </div>
+                <br>
+                <h4>MG Windsor EV</h4>
+                <p>Rs 14 - 16 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/eVs/Comet.webp" alt="Comet" width="247" height="145">
+                </div>
+                <br>
+                <h4>MG Comet EV</h4>
+                <p>Rs 7 - 9.84 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/eVs/XEV 9E.avif" alt="XEV 9E" width="247" height="145">
+                </div>
+                <br>
+                <h4>Mahindra XEV 9e</h4>
+                <p>Rs 21.90 - 30.50 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+            <div class="SUV">
+                <div class="img-suv">
+                    <img src="Images/eVs/CurvvEV.avif" alt="CurvvEV" width="247" height="145">
+                </div>
+                <br>
+                <h4>Tata Curvv EV</h4>
+                <p>Rs 17.49 - 21.99 Lakh*</p>
+                <div class="view-more">
+                    <p>View March Offers</p>
+                </div>
+            </div>
+        </div>
+        <h2 style="cursor: pointer; color: crimson; font-weight: bolder;">View All Electric Cars ></h2>
+    </div>    
+    <div class="most-sell">
+        <div class="head">
+            <h2 style="padding: 10px;">Popular Brands</h2>
+        </div>
+        <div class="content-head scrollable-div">
+            <div class="brand">
+                <div class="img-car-logo">
+                    <img src="Images/Car Logos/maruti.webp" alt="Maruti" width="247">
+                </div>
+                <p class="brd">Maruti</p>
+            </div>       
+            <div class="brand">
+                <div class="img-car-logo">
+                    <img src="Images/Car Logos/tata.webp" alt="Windsor" width="247">
+                </div>
+                <p class="brd">Tata</p>
+            </div>
+            <div class="brand">
+                <div class="img-car-logo">
+                    <img src="Images/Car Logos/kia.webp" alt="Comet" width="247">
+                </div>
+                <p class="brd">Kia</p>
+            </div>
+            <div class="brand">
+                <div class="img-car-logo">
+                    <img src="Images/Car Logos/toyota.webp" alt="XEV 9E" width="247">
+                </div>
+                <p class="brd">Toyota</p>
+            </div>
+            <div class="brand">
+                <div class="img-car-logo">
+                    <img src="Images/Car Logos/hyundai.webp" alt="CurvvEV" width="247">
+                </div>
+                <p class="brd">Hyundai</p>
+            </div>
+            <div class="brand">
+                <div class="img-car-logo">
+                    <img src="Images/Car Logos/mahindra.webp" alt="CurvvEV" width="247">
+                </div>
+                <p class="brd">Mahindra</p>
+            </div>
+            <div class="brand">
+                <div class="img-car-logo">
+                    <img src="Images/Car Logos/mg.avif" alt="CurvvEV" width="247">
+                </div>
+                <p class="brd">MG</p>
+            </div>
+            <div class="brand">
+                <div class="img-car-logo">
+                    <img src="Images/Car Logos/skoda.avif" alt="CurvvEV" width="247">
+                </div>
+                <p class="brd">Skoda</p>
+            </div>
+            <div class="brand">
+                <div class="img-car-logo">
+                    <img src="Images/Car Logos/jeep.avif" alt="CurvvEV" width="247">
+                </div>
+                <p class="brd">Jeep</p>
+            </div>
+            <div class="brand">
+                <div class="img-car-logo">
+                    <img src="Images/Car Logos/renault.avif" alt="CurvvEV" width="247">
+                </div>
+                <p class="brd">Renault</p>
+            </div>
+            <div class="brand">
+                <div class="img-car-logo">
+                    <img src="Images/Car Logos/nissan.avif" alt="CurvvEV" width="247">
+                </div>
+                <p class="brd">Nissan</p>
+            </div>
+        </div>
+        <h2 style="cursor: pointer; color: crimson; font-weight: bolder;">View All Brands ></h2>
+    </div>  
+    <div class="footer">
+        <div class="first">
+            <i class="fa-solid fa-award fa-3x"></i>
+            <div class="hds">
+                <h2> India #1</h2>
+                <p> Largest Auto portal</p>
+            </div>
+        </div>
+        <div class="first">
+            <i class="fa-solid fa-car fa-3x"></i>
+            <div class="hds">
+                <h2> Car Sold</h2>
+                <p> Every 4 minute</p>
+            </div>
+        </div>
+        <div class="first">
+            <i class="fa-solid fa-tag fa-3x"></i>
+            <div class="hds">
+                <h2> Offers</h2>
+                <p> Stay updated pay less</p>
+            </div>
+        </div>
+    </div>
+    <div class="sec-footer">
+        <div class="inner">
+            <h4>About DriveXchange</h4>
+            <br>
+            <p>About</p>
+            <p>Careers With Us</p>
+            <p>Term & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Corporate Policies</p>
+            <p>Investor</p>
+            <p>FAQs</p>
+        </div>
+        <div class="inner">
+            <h4>Connect With Us</h4>
+            <br>
+            <p>Feedback</p>
+            <p>Contact Us</p>
+            <p>Advertise with Us</p>
+            <p>Become Partner Dealer</p>
+        </div>
+        <div class="inner">
+            <h4>Experience DriveXchange App</h4>
+            <br>
+            <img src="Images/Apple.png" alt="App Store">
+            <img src="Images/PlayStore.png" alt="Play Store">
+        </div>
+    </div>
+    <div class="sub-sub-footer">
+        <div class="copy">
+            <i class="fa-regular fa-copyright fa-1x"></i>
+            2025
+        </div>
+        <div class="copy">
+            <p style="font-size: large; font-weight: bold;">Connect:
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-square-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            }
+        );
+        function showLoginForm() {
+            document.getElementById("loginForm").style.display = "block";
+        }
+
+        function closeLoginForm() {
+            document.getElementById("loginForm").style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
+

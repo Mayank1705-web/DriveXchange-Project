@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" width="50" alt="User Icon">
+        </div>
+        <h2>Create an Account</h2>
+        <form action="signup.php" method="post">
+            <label>Username:</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            
+            <label>Password:</label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            
+            <label>E-mail:</label>
+            <input type="email" placeholder="Enter E-mail" name="mailid" required>
+            
+            <label>User Type:</label>
+            <select name="usertype">
+                <option value="Buyer">Buyer</option>
+                <option value="Seller">Seller</option>
+            </select>
+            
+            <button class="btn">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
